@@ -62,7 +62,7 @@ const Home =() => {
       // USING DEBOUNCE TO PERFORM FETCHFUNCITON CALL:
       useEffect(() => {
         if(movieInput.length>0){
-          // WHEN THE USER STOPS TYPING FOR 500MS; THIS debouncedTimer IS CALLED INSTEAD OF THE API CALL BEING MADE AT EVERY WORD WRITTEN BY USER
+          // WHEN THE USER STOPS TYPING FOR 300MS; THIS debouncedTimer IS CALLED INSTEAD OF THE API CALL BEING MADE AT EVERY WORD WRITTEN BY USER
           const debouncedTimer=setTimeout(() => {
             inputHandler();
           },300);
