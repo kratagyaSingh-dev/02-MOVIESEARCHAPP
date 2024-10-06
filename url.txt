@@ -1,0 +1,2 @@
+https://www.omdbapi.com/?apikey=f58270b1&i=${imdb_ID}
+https://www.omdbapi.com/?apikey=f58270b1&s=${Movie_Name}
