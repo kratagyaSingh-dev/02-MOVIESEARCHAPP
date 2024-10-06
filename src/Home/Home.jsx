@@ -120,28 +120,4 @@ const Home =() => {
 }
 export default Home;
 
-// Export the loader function
-// export const basicMovieInfoLoader = async ({ request }) => {
-//   const url=new URL(request.url);//CONVERTS STRING URL TO AN OBJECT URL which has searchParams also as a key 
-//   console.log(url.searchParams);//CONTAINS THE QUERY AND ITS VALUE IN AN OBJECTR FORM
 
-//   const movieInput=url.searchParams.get('search'); //gives the value of the search query
-//   if(!movieInput){
-//     return "Please enter any movies, webseries, TV Shows... "
-//   }
-//   try{
-//     const res=await fetch(`https://www.omdbapi.com/?apikey=f58270b1&s=${movieInput}`);
-//     if(!res.ok){
-//       throw new Error(`error encountered fetching data:${res.statusText}`)
-//     }
-    
-//     const data=await res.json();
-//     if(data) return data;
-
-//   } catch(error){
-//     console.error(error);
-//   }
- 
-  
-//   // Further implementation can go here
-// };
